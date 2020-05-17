@@ -1,17 +1,67 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Hack The Waste
+     My profile
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-        <ion-title size="large">Edit your profile</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <h1>You will be able to edit your account here :)</h1>
+<ion-content>
+
+  <div class="header">
+    <h2>Tibo</h2>
+
+    <div class="space-between">
+      <div class="followings">
+        <ion-badge color="primary" mode="ios">15</ion-badge>
+        <p>Followers</p>
+      </div>
+
+      <div class="followings">
+        <ion-badge color="primary" mode="ios">35</ion-badge>
+        <p>Following</p>
+      </div>
+    </div>
+
+  </div>
+  <div class="flex">
+    <div class="border-blue">
+      <div class="border-white">
+        <div class="img-box">
+          <img src="../../assets/icon/avatar.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ion-padding speaker-detail">
+    <ion-chip color="twitter" button (click)="openExternalUrl('https://twitter.com/')">
+      <ion-icon name="logo-twitter"></ion-icon>
+      <ion-label>Twitter</ion-label>
+    </ion-chip>
+
+    <ion-chip color="dark" button (click)="openExternalUrl('https://github.com/')">
+      <ion-icon name="logo-github"></ion-icon>
+      <ion-label>GitHub</ion-label>
+    </ion-chip>
+
+    <ion-chip color="instagram" button (click)="openExternalUrl('https://instagram.com/')">
+      <ion-icon name="logo-instagram"></ion-icon>
+      <ion-label>Instagram</ion-label>
+    </ion-chip>
+    <p><b>Bio:</b></p>
+    <p> My name is Tibo and this is my bio. </p>
+    <p><b>Latest challenge:</b></p>
+    <p> Plastic boat</p>
+    
+    <p><b>Solved challenges:</b></p>
+    <p> 5</p>
+
+    <hr>
+    <ion-button color="secondary">
+      Add friend
+    </ion-button>
+    
+  </div>
+
 </ion-content>

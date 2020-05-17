@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Signup</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-content>
+    <ion-card>
+      <ion-card-header>
+        <h2>Create an account</h2>
+      </ion-card-header>
+    
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="stacked">Username</ion-label>
+        <ion-input placeholder="Username" type="Username"></ion-input>
+        </ion-item>
+        <br>
+        <ion-item>
+          <ion-label position="stacked">Email</ion-label>
+          <ion-input placeholder="Email" type="Email"></ion-input>
+          </ion-item>
+        <br>
+        <ion-item>
+          <ion-label position="stacked">Your password</ion-label>
+          <ion-input placeholder="password" type="password"></ion-input>
+          </ion-item>
+        <br>
+        <ion-item>
+          <ion-label position="stacked">Repeat password</ion-label>
+          <ion-input placeholder="password" type="password"></ion-input>
+          </ion-item>
+        <br>
+          <ion-button expand="block" color="secondary" (click)="registerGedaan()">register</ion-button>
+          <ion-button expand="block" color="danger" (click)="registerGedaan()">cancel</ion-button>
+      </ion-card-content>
+  
+    </ion-card>
+</ion-content>

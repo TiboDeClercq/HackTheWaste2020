@@ -18,16 +18,24 @@ export class LoginPage implements OnInit {
 
   ngOnInit() {
   }
-
-  async login(){
-    const user = await this.ngFireAuth.auth.signInWithEmailAndPassword(this.user.email, this.user.password);
-    console.log(user);
-    
-    if (user.user.email){
-      this.router.navigate(['/tabs']);
-    } else {
-      alert('failed to login :(');
-    }
-
+  login(){
+    this.router.navigate(['/tabs']);
   }
+  register(){
+    this.router.navigate(['/signup'])
+  }
+  // async login(){
+  //   const user = await this.ngFireAuth.auth.signInWithEmailAndPassword(this.user.email, this.user.password);
+  //   console.log(user);
+    
+  //   if (user.user.email){
+  //     this.router.navigate(['/tabs']);
+  //   } else {
+  //     alert('failed to login :(');
+  //   }
+
+  // }
+  // async register(){
+  //   const user = await this.ngFireAuth
+  // }
 }
